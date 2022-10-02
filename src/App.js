@@ -3,17 +3,16 @@ import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
 import { Routes, Route, useLocation } from "react-router-dom";
 import SmoothScrolling from "./utils/SmoothScrolling";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Institution from "./Pages/Institution";
 import Prestation from "./Pages/Prestations";
 import Produits from "./Pages/Produits";
 import { AnimatePresence } from "framer-motion";
 import Contact from "./Pages/Contact";
-import PagesTransition from "./Components/PagesTransition";
+
 const App = () => {
 
   const [skew, setSkew] = useState(0)
-  const [scrollY, setScrollY] = useState(0)
 
   const location = useLocation();
 

@@ -6,7 +6,7 @@ import Hero from '../../Components/Hero'
 import { motion } from 'framer-motion'
 import PagesTransition from '../../Components/PagesTransition'
 import Fade from 'react-reveal/Fade';
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+//const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = ({ skew }) => {
   return (
