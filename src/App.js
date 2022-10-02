@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import Footer from "./Components/Footer";
+import { Routes, Route, useLocation } from "react-router-dom";
+import SmoothScrolling from "./utils/SmoothScrolling";
+import { useEffect, useState } from "react";
+import Institution from "./Pages/Institution";
+import Prestation from "./Pages/Prestations";
+import Produits from "./Pages/Produits";
+import { AnimatePresence } from "framer-motion";
+import Contact from "./Pages/Contact";
+import PagesTransition from "./Components/PagesTransition";
+const App = () => {
 
-function App() {
+  const [skew, setSkew] = useState(0)
+  const [scrollY, setScrollY] = useState(0)
+
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+
+        <SmoothScrolling setSkew={setSkew}>
+          <div className="App">
+          <header>
+        <Navbar />
+        
       </header>
-    </div>
+          <AnimatePresence exitBeforeEnter>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home skew={skew} />} />
+              <Route path="/institution" element={<Institution />} />
+              <Route path="/prestations" element={<Prestation />} />
+              <Route path="/produits" element={<Produits />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/presations/:id" element={<Prestation />} />
+              <Route path="/presations/:id" element={<Produits />} />
+            </Routes>
+            </AnimatePresence>
+
+            <Footer />
+          </div>
+        </SmoothScrolling>
+    </>
   );
 }
 
