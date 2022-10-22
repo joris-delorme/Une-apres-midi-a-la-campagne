@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
 import { institutPage1, institutPage2, prestationsImage } from '../../utils/constant'
-import Fade from 'react-reveal/Fade'
+import { Fade } from "react-awesome-reveal";
 import Parallax from '../../Components/Parallax'
 
 const Institution = ({ skew }) => {

@@ -5,7 +5,7 @@ import { homeInstitutionImage, institut1, institut2,institut3, homeImage } from 
 import Hero from '../../Components/Hero'
 import { motion } from 'framer-motion'
 import PagesTransition from '../../Components/PagesTransition'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 //const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = ({ skew }) => {

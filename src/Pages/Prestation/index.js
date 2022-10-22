@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { prestationsData } from '../../utils/constant'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const Prestation = () => {
     const { id } = useParams()
@@ -19,7 +19,6 @@ const Prestation = () => {
                 <article>
                     <Fade bottom>
                         <h1>{presation?.title}</h1>
-
                     </Fade>
                     {
                         presation?.content.map((content, key) => (
