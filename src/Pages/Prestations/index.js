@@ -13,7 +13,7 @@ const Prestations = () => {
     return (
         <section className='prestations'>
             <Hero image={prestationsImage}>
-                <Fade bottom delay={200}>
+                <Fade direction="up" delay={200}>
                     <h1>Offrez vous des extrats sans payer d’extrat</h1>
                 </Fade>
             </Hero>

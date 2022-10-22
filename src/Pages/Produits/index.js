@@ -13,7 +13,7 @@ const Produits = () => {
     return (
         <section className='produits'>
             <Hero image={produitsImage}>
-                <Fade bottom delay={200}>
+                <Fade direction="up" delay={200}>
                 <h1>Plus que de simple produits</h1>
                 </Fade>
             </Hero>

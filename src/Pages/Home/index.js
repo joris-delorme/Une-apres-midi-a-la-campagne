@@ -6,6 +6,7 @@ import Hero from '../../Components/Hero'
 import { motion } from 'framer-motion'
 import PagesTransition from '../../Components/PagesTransition'
 import { Fade } from "react-awesome-reveal";
+
 //const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = ({ skew }) => {
@@ -17,10 +18,10 @@ const Home = ({ skew }) => {
   return (
     <motion.section className='home'>
       <Hero image={homeImage}>
-        <Fade bottom delay={200}>
+        <Fade direction="up" delay={200}>
         <h1>Une après-midi à la campagne</h1>
         </Fade>
-        <Fade bottom delay={400}>
+        <Fade direction="up" delay={400}>
         <MagneticButton isLink={true} link='/contact'>Prendre un rendez-vous</MagneticButton>
         </Fade>
       </Hero>

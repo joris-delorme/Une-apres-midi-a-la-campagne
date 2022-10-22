@@ -13,11 +13,13 @@ import Contact from "./Pages/Contact";
 
 const App = () => {
 
-  const [skew, setSkew] = useState(0);
+  const [skew, setSkew] = useState(0)
 
   const location = useLocation();
 
   return (
+    <>
+
       <SmoothScrolling setSkew={setSkew}>
         <div className="App">
           <header>
@@ -38,6 +40,7 @@ const App = () => {
           <Footer />
         </div>
       </SmoothScrolling>
+    </>
   );
 }
 

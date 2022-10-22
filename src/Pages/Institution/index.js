@@ -12,7 +12,7 @@ const Institution = ({ skew }) => {
     return (
         <section className='institutions'>
             <Hero image={prestationsImage}>
-                <Fade bottom delay={200}>
+                <Fade direction="up" delay={200}>
                     <h1>Une Institution de beauté hors du temps</h1>
                 </Fade>
             </Hero>

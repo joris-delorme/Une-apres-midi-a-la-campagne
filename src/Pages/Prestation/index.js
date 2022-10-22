@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { prestationsData } from '../../utils/constant'
 import { Fade } from "react-awesome-reveal";
 
+
 const Prestation = () => {
     const { id } = useParams()
     const presation = prestationsData.find((pre) => pre.id === id)
@@ -17,18 +18,19 @@ const Prestation = () => {
             {
                 presation &&
                 <article>
-                    <Fade bottom>
+                    <Fade direction="up">
                         <h1>{presation?.title}</h1>
+
                     </Fade>
                     {
                         presation?.content.map((content, key) => (
                             <div className='content' key={key}>
-                                <Fade bottom key={key} delay={100}>
+                                <Fade direction="up" key={key} delay={100}>
                                     <h2>{content?.title}</h2>
                                 </Fade>
                                 {
                                     content?.paragraph.map((paragraph, key) => (
-                                        <Fade bottom cascade key={key} delay={200}>
+                                        <Fade direction="up" cascade key={key} delay={200}>
                                             <div className="paragraph" >
                                                 {
                                                     paragraph?.prestations.map((presta, key) => (

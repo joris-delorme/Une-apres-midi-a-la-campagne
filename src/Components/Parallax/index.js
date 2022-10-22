@@ -29,7 +29,7 @@ const Parallax = ({ children, offset = 50, className=""}) => {
 
   // Don't parallax if the user has "reduced motion" enabled
   if (prefersReducedMotion) {
-    return {children}
+    return <>{children}</>
   }
 
   return (
