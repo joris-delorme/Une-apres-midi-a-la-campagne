@@ -17,10 +17,7 @@ const SmoothScrolling = ({ setSkew, children }) => {
         rounded: 0
     };
 
-    // Run scrollrender once page is loaded.
-    useEffect(() => {
-        requestAnimationFrame(() => skewScrolling());
-    }, []);
+
 
     //set the height of the body.
     useEffect(() => {
@@ -55,6 +52,14 @@ const SmoothScrolling = ({ setSkew, children }) => {
         //loop vai raf
         requestAnimationFrame(() => skewScrolling());
     };
+
+
+
+    window.addEventListener('load', () => {
+        // Run scrollrender once page is loaded.
+        requestAnimationFrame(() => skewScrolling());
+
+    })
 
     return (
         <div ref={app} >
