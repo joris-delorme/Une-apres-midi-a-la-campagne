@@ -1,5 +1,6 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
+import { scrollDown } from '../../utils/constant';
 
 const Hero = ({image, children}) => {
   return (
@@ -9,6 +10,8 @@ const Hero = ({image, children}) => {
                 <div className="image" style={{height: '100vh'}}></div>
             </Parallax>
         </div>
+        <img className='scrollDown' src={scrollDown} alt='scroll down' />
+        
         {children}
     </section>
   )

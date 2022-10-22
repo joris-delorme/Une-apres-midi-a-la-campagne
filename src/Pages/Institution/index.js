@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
-import { prestationsImage } from '../../utils/constant'
+import { institutPage1, institutPage2, prestationsImage } from '../../utils/constant'
 import Fade from 'react-reveal/Fade'
+import Parallax from '../../Components/Parallax'
 
-const Institution = () => {
+const Institution = ({ skew }) => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <section className='institutions'>
             <Hero image={prestationsImage}>
@@ -13,6 +17,31 @@ const Institution = () => {
                 </Fade>
             </Hero>
             <PagesTransition />
+            <h2>En poussant la porte de l’institut de beauté un après-midi à la campagne vous rentrez dans un univers Phyto aromatique.</h2>
+            <section className='institution-content'>
+                <div className="image-container image-container-1">
+                    <Parallax offset={100}>
+                        <img src={institutPage1} alt="Institution 1" />
+                    </Parallax>
+                </div>
+                <div className="text">
+                    <div style={{ transform: `skewY(${skew}deg)` }}>
+                        <p>Institut Yon-Ka depuis 1992 vous serez accompagné dans cet univers de mille senteurs par Catherine qui vous orientera vers le soin Du visage ou du corps le mieux adapté à votre envie du moment.</p>
+                    </div>
+                </div>
+            </section>
+            <section className='institution-content reverse'>
+                <div className="image-container">
+                    <Parallax offset={100}>
+                        <img src={institutPage2} alt="Institution 2" />
+                    </Parallax>
+                </div>
+                <div className="text">
+                    <div style={{ transform: `skewY(${skew}deg)` }}>
+                        <p>L’institut Un après-midi à la campagne c’est aussi les soins minceur avec le Cellu M6, la luxopuncture méthode qui stimule vos énergies et les épilations.</p>
+                    </div>
+                </div>
+            </section>
         </section>
     )
 }

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
-import { prestationsImage } from '../../utils/constant'
+import { prestationsData, prestationsImage } from '../../utils/constant'
 import Fade from 'react-reveal/Fade'
-const Prestation = () => {
+import { Link } from 'react-router-dom'
+
+const Prestations = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return (
         <section className='prestations'>
             <Hero image={prestationsImage}>
@@ -12,8 +18,18 @@ const Prestation = () => {
                 </Fade>
             </Hero>
             <PagesTransition />
+
+            <div className="presations-all">
+                {
+                    prestationsData.map((prestation, key) => 
+                    <Link to={prestation.id} key={key}>
+                        <img src={prestation.image} alt={prestation.title}  />
+                    </Link>
+                    )
+                }
+            </div>
         </section>
     )
 }
 
-export default Prestation
+export default Prestations

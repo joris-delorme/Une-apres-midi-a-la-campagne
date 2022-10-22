@@ -7,6 +7,15 @@
     overflow: hidden;
     position: relative;
 
+
+    .scrollDown {
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        cursor: pointer;
+        animation: scrollDown 2s ease-in-out infinite;
+    }
+
     h1 {
         color: #FAEEE8;
         font-size: 70px;
@@ -39,4 +48,16 @@
             font-size: 35px;
         }
     }
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }  
 }

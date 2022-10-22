@@ -1,0 +1,20 @@
+.produits {
+    .produits-content {
+        padding: 100px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 120px;
+        column-gap: 50px;
+        align-items: center;
+        justify-content: center;
+
+        .produits {
+            width: 100%;
+            max-width: 655px;
+        }
+        .marque {
+            width: 100%;
+            max-width: 446px;
+        }
+    }
+}

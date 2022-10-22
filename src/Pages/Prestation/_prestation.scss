@@ -1,0 +1,39 @@
+.prestation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 30px;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .pres {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+    }
+
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        opacity: 0.5;
+        max-width: 400px;
+    }
+}
