@@ -68,7 +68,7 @@ const Contact = () => {
 
                 <div className="tel-hor">
                     <div className="horaire">
-                        <h3>Ouvertures</h3>
+                        <h3>Horaires d'ouvertures</h3>
                         <ul>
                             <li>Lundi : Fermé</li>
                             <li>Marid : 9h - 19h</li>

@@ -20,7 +20,6 @@ const Prestation = () => {
                 <article>
                     <Fade direction="up">
                         <h1>{presation?.title}</h1>
-
                     </Fade>
                     {
                         presation?.content.map((content, key) => (

@@ -19,7 +19,7 @@ const Home = ({ skew }) => {
     <motion.section className='home'>
       <Hero image={homeImage}>
         <Fade direction="up" delay={200}>
-        <h1>Une après-midi à la campagne</h1>
+        <h1>Un après-midi à la campagne</h1>
         </Fade>
         <Fade direction="up" delay={400}>
         <MagneticButton isLink={true} link='/contact'>Prendre un rendez-vous</MagneticButton>

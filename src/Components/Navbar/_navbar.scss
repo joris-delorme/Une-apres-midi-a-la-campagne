@@ -3,14 +3,19 @@
     display:  flex;
     justify-content: space-between;
     width: 100%;
-    padding: 30px 50px;
-    z-index: 99;
+    padding: 10px 50px;
+    z-index: 9999;
     background-color: #0000002f;
     backdrop-filter: blur(20px);
+    align-items: center;
 
     .logo {
         font-weight: 900;
         color: #FAEEE8;
+
+        img {
+            height: 60px;
+        }
     }
     
     ul {
@@ -88,7 +93,7 @@
 
 @media screen and (max-width: 768px) {
     .main-navbar {
-        padding: 30px 30px;
+        padding: 10px 30px;
         .menu {
             display: block;
         }

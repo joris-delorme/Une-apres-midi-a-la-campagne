@@ -6,7 +6,7 @@ import produitsImage from '../assets/image/produits.png'
 
 import scrollDown from '../assets/image/scrollDown.svg'
 
-
+import logo from '../assets/image/logo.png'
 // INSTITUTION IMAGES
 
 import institut1 from '../assets/image/institut1.png'
@@ -36,106 +36,10 @@ import produits1 from '../assets/image/produits/produits1.png'
 import produits2 from '../assets/image/produits/produits2.png'
 
 const prestationsData = [
-    {
-        title: "Cellu M6",
-        id: "cellu-m6",
-        image: presationImage1,
-        content: [
-            {
-                title: "LE CORPS",
 
-                paragraph: [
-                    {
-                        prestations: [
-                            {
-                                text: "CELLU M6 35mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "54€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "540€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "810€"
-                            },
-                        ]
-
-                    },
-                    {
-                        prestations: [
-                            {
-                                text: "CELLU M6 15mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "27€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "270€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "405€"
-                            },
-                        ]
-                    }
-                ]
-            },
-            {
-                title: "LE VISAGE",
-
-                paragraph: [
-                    {
-                        prestations: [
-                            {
-                                text: "CELLU M6 35mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "54€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "540€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "810€"
-                            },
-                        ]
-
-                    },
-                    {
-                        prestations: [
-                            {
-                                text: "CELLU M6 15mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "27€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "270€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "405€"
-                            },
-                        ]
-                    }
-                ]
-            },
-        ]
-
-    },
     {
         title: "Soins du visage YON-KA",
+        cardTitle: "Soins du visage YON-KA",
         id: "soins-du-visage-yon-ka",
         image: presationImage8,
         content:
@@ -168,6 +72,7 @@ const prestationsData = [
     },
     {
         title: "Soins des yeux",
+        cardTitle: "Soins des yeux",
         id: "soins-des-yeux",
         image: presationImage6,
         content: [
@@ -199,6 +104,7 @@ const prestationsData = [
     },
     {
         title: "Epilations douceur au Calendula",
+        cardTitle: "Epilations",
         id: "epilations-douceur-au-calendula",
         image: presationImage2,
         content: [
@@ -268,6 +174,7 @@ const prestationsData = [
     },
     {
         title: "Les modelages",
+        cardTitle: "Soins du corps",
         id: "les-modelages",
         image: presationImage7,
         content: [
@@ -386,11 +293,10 @@ const prestationsData = [
                 ]
             }
         ]
-
-
     },
     {
         title: "Les soins corps et visage",
+        cardTitle: "Les soins corps et visage",
         id: "les-soins-corps-et-visage",
         image: presationImage5,
         content: [
@@ -432,6 +338,7 @@ const prestationsData = [
     },
     {
         title: "Gommages du corps",
+        cardTitle: "Gommages",
         id: "gommages-du-corps",
         image: presationImage3,
         content: [
@@ -459,6 +366,7 @@ const prestationsData = [
     },
     {
         title: "Luxothérapie",
+        cardTitle: "Luxothérapie",
         id: "luxothérapie",
         image: presationImage4,
         content: [
@@ -482,11 +390,109 @@ const prestationsData = [
                 ]
             }
         ]
+    },
+    {
+        title: "Cellu M6",
+        cardTitle: "Cellu M6",
+        id: "cellu-m6",
+        image: presationImage1,
+        content: [
+            {
+                title: "LE CORPS",
 
+                paragraph: [
+                    {
+                        prestations: [
+                            {
+                                text: "CELLU M6 35mn"
+                            },
+                            {
+                                text: "Cellu M6 - à la séance",
+                                price: "54€"
+                            },
+                            {
+                                text: "Cellu M6 10 séances + 1 offerte",
+                                price: "540€"
+                            },
+                            {
+                                text: "Cellu M6 15 séances + 2 offertes",
+                                price: "810€"
+                            },
+                        ]
+
+                    },
+                    {
+                        prestations: [
+                            {
+                                text: "CELLU M6 15mn"
+                            },
+                            {
+                                text: "Cellu M6 - à la séance",
+                                price: "27€"
+                            },
+                            {
+                                text: "Cellu M6 10 séances + 1 offerte",
+                                price: "270€"
+                            },
+                            {
+                                text: "Cellu M6 15 séances + 2 offertes",
+                                price: "405€"
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "LE VISAGE",
+
+                paragraph: [
+                    {
+                        prestations: [
+                            {
+                                text: "CELLU M6 35mn"
+                            },
+                            {
+                                text: "Cellu M6 - à la séance",
+                                price: "54€"
+                            },
+                            {
+                                text: "Cellu M6 10 séances + 1 offerte",
+                                price: "540€"
+                            },
+                            {
+                                text: "Cellu M6 15 séances + 2 offertes",
+                                price: "810€"
+                            },
+                        ]
+
+                    },
+                    {
+                        prestations: [
+                            {
+                                text: "CELLU M6 15mn"
+                            },
+                            {
+                                text: "Cellu M6 - à la séance",
+                                price: "27€"
+                            },
+                            {
+                                text: "Cellu M6 10 séances + 1 offerte",
+                                price: "270€"
+                            },
+                            {
+                                text: "Cellu M6 15 séances + 2 offertes",
+                                price: "405€"
+                            },
+                        ]
+                    }
+                ]
+            },
+        ]
 
     },
     {
         title: "LaHoChi",
+        cardTitle: "Soins énergérique",
         id: "lahochi",
         image: presationImage9,
         content: [
@@ -515,5 +521,6 @@ export {
     produits2,
     scrollDown,
     institutPage1,
-    institutPage2
+    institutPage2,
+    logo
 }

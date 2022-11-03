@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
 import { institutPage1, institutPage2, prestationsImage } from '../../utils/constant'
@@ -7,17 +7,16 @@ import Parallax from '../../Components/Parallax'
 
 const Institution = ({ skew }) => {
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }, [])
     return (
         <section className='institutions'>
             <Hero image={prestationsImage}>
                 <Fade direction="up" delay={200}>
-                    <h1>Une Institution de beauté hors du temps</h1>
+                    <h2>En poussant la porte de l’institut de beauté un après-midi à la campagne vous rentrez dans un univers Phyto aromatique.</h2>
                 </Fade>
             </Hero>
             <PagesTransition />
-            <h2>En poussant la porte de l’institut de beauté un après-midi à la campagne vous rentrez dans un univers Phyto aromatique.</h2>
             <section className='institution-content'>
                 <div className="image-container image-container-1">
                     <Parallax offset={100}>

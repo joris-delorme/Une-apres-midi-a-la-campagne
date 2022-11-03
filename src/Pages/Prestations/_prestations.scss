@@ -17,14 +17,59 @@
         justify-content: center;
         width: 100%;
         padding-bottom: 100px;
+    }
+
+
+    .prestation-card {
+        border-radius: 20px;
+        overflow: hidden;
+        text-decoration: none;
+        cursor: pointer;
+
 
         img {
             transition: all 0.3s ease-in-out;
         }
 
-        img:hover {
-            transform: scale(0.9);
-            cursor: pointer;
+        &:hover {
+            .img-container {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .prestation-card-bottom {
+                img {
+                    transform: translateX(10px);
+                }
+            }
+        }
+
+        .img-container {
+            overflow: hidden;
+            height: fit-content;
+
+            img {
+                display: block;
+            }
+        }
+
+        .prestation-card-bottom {
+            background-color: #53716F;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            column-gap: 30px;
+
+            p {
+                color: #fff;         
+            }
+
+            img {
+                transform: rotate(-90deg);
+                height: 15px;
+                display: block;
+            }
         }
     }
 }

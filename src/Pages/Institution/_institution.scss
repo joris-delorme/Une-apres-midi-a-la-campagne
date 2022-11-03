@@ -6,8 +6,6 @@
         margin-bottom: 100px;
     }
 
-    h1 {margin-top: 0;}
-
     .reverse {
         flex-direction: row-reverse;
     }
@@ -17,8 +15,8 @@
         font-size: 40px;
         text-align: center;
         margin: auto;
-        margin-bottom: 100px;
         line-height: 150%;
+        color: #FAEEE8;
     }
 
     .institution-content {
@@ -77,7 +75,7 @@
 
         h2 {
             width: 80%;
-            font-size: 0px;
+            font-size: 30px;
             margin-bottom: 30px;
         }
 
