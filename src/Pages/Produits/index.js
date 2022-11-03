@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
-import Hero from '../../Components/Hero'
+//import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
-import { marque1, marque2, produits1, produits2, produitsImage } from '../../utils/constant'
-import { Fade } from "react-awesome-reveal";
+import { marque1, marque2, produits1, produits2 } from '../../utils/constant'
+//import { Fade } from "react-awesome-reveal";
 
 const Produits = () => {
 

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Hero from '../../Components/Hero'
 import PagesTransition from '../../Components/PagesTransition'
 import { prestationsData, prestationsImage } from '../../utils/constant'
-import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom'
 import { scrollDown } from '../../utils/constant';
 
@@ -29,7 +28,7 @@ const Prestations = () => {
                             </div>
                             <div className="prestation-card-bottom">
                                 <p>{prestation.cardTitle}</p>
-                                <img src={scrollDown}/>
+                                <img src={scrollDown} alt="scroll down"/>
                             </div>
                     </Link>
                     )
