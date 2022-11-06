@@ -35,7 +35,11 @@ const Prestation = () => {
                                                     paragraph?.prestations.map((presta, key) => (
                                                         <div className="pres" key={key}>
                                                             <p>{presta?.text}</p>
-                                                            <p>{presta?.price}</p>
+                                                            <div className="prices">
+                                                            {
+                                                                presta?.price?.split('<br />').map((price, key ) => <p key={key}>{price}</p> )
+                                                            }
+                                                            </div>
                                                         </div>
                                                     ))
                                                 }

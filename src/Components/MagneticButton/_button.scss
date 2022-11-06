@@ -9,14 +9,14 @@
         overflow: hidden;
 
         &.secondary {
-            border: solid 2px #53716F;
+            border: solid 2px #FAEEE8;
 
             &::before {
-                background-color: #53716F;
+                background-color: #FAEEE8;
             }
 
             span {
-                color: #53716F;
+                color: #FAEEE8;
             }
         }
 
@@ -28,7 +28,7 @@
             position: relative;
             z-index: 99;
             transition: all 0.7s ease-in-out;
-            color: #FAEEE8;
+            color: #53716F;
             display: block;
             padding: 10px 30px;
         }
@@ -59,7 +59,7 @@
             }
 
             span {
-                color: #53716F;
+                color: #53716F!important;
             }
 
             &::before {

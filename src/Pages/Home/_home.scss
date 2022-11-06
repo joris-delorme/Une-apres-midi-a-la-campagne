@@ -5,6 +5,7 @@
         font-size: 30px;
         font-weight: 900;
         margin-bottom: 20px;
+        text-transform: uppercase;
     }
 
     .hero {
@@ -43,6 +44,14 @@
         justify-content: center;
         align-items: center;
         column-gap: 130px;
+        background: linear-gradient(67.1deg, #2B3A39 0%, #53716F 100%);
+        margin-bottom: 100px;
+        color: #FAEEE8;
+        padding-top: 30px;
+        
+        .magnetic-button {
+            border: solid 2px #FAEEE8;
+        }
 
         .image-container {
             overflow: hidden;

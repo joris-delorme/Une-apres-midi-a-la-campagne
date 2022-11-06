@@ -71,7 +71,7 @@ const Contact = () => {
                         <h3>Horaires d'ouvertures</h3>
                         <ul>
                             <li>Lundi : Fermé</li>
-                            <li>Marid : 9h - 19h</li>
+                            <li>Mardi : 9h - 19h</li>
                             <li>Mercredi : 8h15 - 13h</li>
                             <li>Jeudi : 9h - 19h</li>
                             <li>Vendredi : 9h - 19h</li>

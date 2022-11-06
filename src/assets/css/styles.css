@@ -76,13 +76,13 @@
   overflow: hidden;
 }
 .magnetic-zone .magnetic-button.secondary {
-  border: solid 2px #53716F;
+  border: solid 2px #FAEEE8;
 }
 .magnetic-zone .magnetic-button.secondary::before {
-  background-color: #53716F;
+  background-color: #FAEEE8;
 }
 .magnetic-zone .magnetic-button.secondary span {
-  color: #53716F;
+  color: #FAEEE8;
 }
 .magnetic-zone .magnetic-button a {
   text-decoration: none;
@@ -91,7 +91,7 @@
   position: relative;
   z-index: 99;
   transition: all 0.7s ease-in-out;
-  color: #FAEEE8;
+  color: #53716F;
   display: block;
   padding: 10px 30px;
 }
@@ -111,7 +111,7 @@
   color: #FAEEE8;
 }
 .magnetic-zone:hover .magnetic-button span {
-  color: #53716F;
+  color: #53716F !important;
 }
 .magnetic-zone:hover .magnetic-button::before {
   transform: translate(-50%, -50%);
@@ -268,6 +268,7 @@ footer p {
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .home .hero h1 {
   max-width: 1020px !important;
@@ -302,6 +303,13 @@ footer p {
   align-items: center;
   -moz-column-gap: 130px;
        column-gap: 130px;
+  background: linear-gradient(67.1deg, #2B3A39 0%, #53716F 100%);
+  margin-bottom: 100px;
+  color: #FAEEE8;
+  padding-top: 30px;
+}
+.home .home-institution .magnetic-button {
+  border: solid 2px #FAEEE8;
 }
 .home .home-institution .image-container {
   overflow: hidden;
@@ -641,6 +649,11 @@ footer p {
   flex-direction: column;
   row-gap: 10px;
   margin-bottom: 40px;
+}
+.prestation .prices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 .prestation p {
   opacity: 0.5;

@@ -376,11 +376,16 @@ const prestationsData = [
                         title: "C'est une méthode indolore générant un rayonnement infrarouges afin de rétablir l'équilibre d'une ou plusieurs fonctions.",
                         prestations: [
                             {
+                                price: "62€ la séance"
+                            },
+                            {
                                 text: "- Troubles du comportement alimentaire."
                             },
                             {
-                                text: "- Troubles du sommeil et du stress",
-                                price: "62€ la séance"
+                                text: "- Troubles liés à la ménopause"
+                            },
+                            {
+                                text: "- Troubles du sommeil et du stress"
                             },
                             {
                                 text: "- Arrêt du tabac"
@@ -492,7 +497,7 @@ const prestationsData = [
     },
     {
         title: "LaHoChi",
-        cardTitle: "Soins énergérique",
+        cardTitle: "Soins énergétiques",
         id: "lahochi",
         image: presationImage9,
         content: [

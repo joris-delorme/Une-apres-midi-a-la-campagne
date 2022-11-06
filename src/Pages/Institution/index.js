@@ -25,7 +25,7 @@ const Institution = ({ skew }) => {
                 </div>
                 <div className="text">
                     <div style={{ transform: `skewY(${skew}deg)` }}>
-                        <p>Institut Yon-Ka depuis 1992 vous serez accompagné dans cet univers de mille senteurs par Catherine qui vous orientera vers le soin Du visage ou du corps le mieux adapté à votre envie du moment.</p>
+                        <p>Institut Yon-Ka depuis 1992 vous serez accompagné dans cet univers de mille senteurs par Catherine qui vous orientera vers le soin du visage ou du corps le mieux adapté à votre envie du moment.</p>
                     </div>
                 </div>
             </section>

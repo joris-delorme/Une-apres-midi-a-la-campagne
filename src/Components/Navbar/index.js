@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link to={"/"} className="logo"> <img src={logo} alt="bocale avec une fleure" /> </Link>
       <ul className={isOpen ? "active" : ""}>
         <li>
-          <Link onClick={() => setIsOpen(!isOpen)} to="/institution">Institut</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to="/institution">L'Institut</Link>
         </li>
         <li>
           <Link onClick={() => setIsOpen(!isOpen)} to="/prestations">Prestations</Link>

@@ -27,6 +27,7 @@ const Prestations = () => {
                                 <img src={prestation.image} alt={prestation.title}  />
                             </div>
                             <div className="prestation-card-bottom">
+
                                 <p>{prestation.cardTitle}</p>
                                 <img src={scrollDown} alt="scroll down"/>
                             </div>
