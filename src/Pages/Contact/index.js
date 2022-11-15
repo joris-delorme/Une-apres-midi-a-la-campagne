@@ -48,7 +48,7 @@ const Contact = () => {
         <section className='contact' >
             <div className="contact-info">
                 <div className="map">
-                    <h2>2 boulevard Jaques replat, 74000 Annecy</h2>
+                    <h2>2 boulevard Jacques replat, 74000 Annecy</h2>
                     {isLoaded &&
                         <GoogleMap
                         zoom={15}

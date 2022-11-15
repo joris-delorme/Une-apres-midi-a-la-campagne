@@ -58,7 +58,7 @@ const Home = ({ skew }) => {
           <p>Arrêt bus ligne 1 Capucins ou rue de Seyssel</p>
         </div>
         <div className="information">
-          <p>Adresse<br />2, boulevard Jaques replat 74000 Annecy</p>
+          <p>Adresse<br />2, boulevard Jacques Replat 74000 Annecy</p>
         </div>
       </section>
     <PagesTransition />
