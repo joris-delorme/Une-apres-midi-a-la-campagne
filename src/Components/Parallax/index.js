@@ -10,7 +10,6 @@ const Parallax = ({ children, offset = 50, className=""}) => {
   const { scrollY } = useViewportScroll()
 
   const initial = elementTop - clientHeight
-  console.log(initial)
   const final = elementTop + offset
 
   const yRange = useTransform(scrollY, [initial, final], [-offset, offset])

@@ -1,0 +1,141 @@
+#admin-presations {        padding: 150px 10vw;
+    .admin-presations__container {
+        height: 100%;
+        width: 100%;
+        .more {
+            height: 250px;
+            width: 250px;
+            background-color: transparent;
+            border: solid 7px;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 5px;
+                width: 50px;
+                background-color: #000;
+                transform: translate(-50%, -50%);
+                border-radius: 100px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 5px;
+                width: 50px;
+                background-color: #000;
+                transform: translate(-50%, -50%) rotate(90deg);
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .prestation-card-container {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+
+        .button-container {
+            position: absolute;
+            right: 3%;
+            top: 3%;
+            z-index: 99;
+            display: flex;
+            column-gap: 20px;
+
+            button {
+                cursor: pointer;
+                color: #fff;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                white-space: nowrap;
+
+                &.edit {
+                    background-color: rgb(52, 52, 255);
+                }
+                &.delete {
+                    background-color: rgb(255, 52, 52);
+                }
+            }
+        }
+    }
+
+    .presations-all {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 25px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .prestation-card {
+        border-radius: 20px;
+        overflow: hidden;
+        text-decoration: none;
+        cursor: pointer;
+
+
+        img {
+            transition: all 0.3s ease-in-out;
+            max-height: 300px;
+        }
+
+        &:hover {
+            .img-container {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .prestation-card-bottom {
+                img {
+                    transform: translateX(10px);
+                }
+            }
+        }
+
+        .img-container {
+            overflow: hidden;
+            height: fit-content;
+
+            img {
+                display: block;
+            }
+        }
+
+        .prestation-card-bottom {
+            background-color: #53716F;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            column-gap: 30px;
+
+            p {
+                color: #fff;         
+            }
+
+            img {
+                transform: rotate(-90deg);
+                height: 15px;
+                display: block;
+            }
+        }
+    }
+}

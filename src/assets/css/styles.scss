@@ -9,8 +9,9 @@
 @import '../../Pages/Prestations/prestations';
 @import '../../Pages/Prestation/prestation';
 @import '../../Pages/Produits/produits';
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import '../../Pages/Admin/Authentification/authentification';
+@import '../../Pages/Admin/admin';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap');
 
 * {
     padding: 0;
@@ -28,4 +29,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pasifico {
+    font-family: 'Pacifico', cursive;
 }

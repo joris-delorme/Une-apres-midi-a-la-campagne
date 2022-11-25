@@ -23,7 +23,7 @@ const Home = ({ skew }) => {
         </div>
         <div className="text">
           <div style={{ transform: `skewY(${skew}deg)` }}>
-            <h2>Bienvenue à un après-midi à la campagne</h2>
+            <h2 className='pasifico'>Bienvenue à un après-midi à la campagne</h2>
             <p>En poussant la porte de l’institut de beauté un après-midi à la campagne vous rentrez dans un univers Phyto aromatique.</p>
           </div>
           <MagneticButton role='secondary' position='left' isLink={true} link='/institution' >En savoir plus</MagneticButton>

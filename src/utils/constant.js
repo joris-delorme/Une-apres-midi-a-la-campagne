@@ -35,6 +35,10 @@ import marque2 from '../assets/image/produits/marque2.png'
 import produits1 from '../assets/image/produits/produits1.png'
 import produits2 from '../assets/image/produits/produits2.png'
 
+// ICON
+
+import imgIcon from '../assets/image/image.png'
+
 const prestationsData = [
 
     {
@@ -45,27 +49,23 @@ const prestationsData = [
         content:
             [
                 {
-                    paragraph: [
+                    prestations: [
                         {
-                            prestations: [
-                                {
-                                    text: "Soin du visage spécifique (différents protocoles 1h30)",
-                                    price: "79€"
-                                },
-                                {
-                                    text: "Soin du visage (différents protocoles 1h)",
-                                    price: "72€"
-                                },
-                                {
-                                    text: "Soin Evasion sensorielle aux pinceaux",
-                                    price: "89€"
-                                },
-                                {
-                                    text: "Soin visage Eclat - Anti-taches 1h30 + 3 soins de 45mn",
-                                    price: "69€"
-                                },
-                            ]
-                        }
+                            text: "Soin du visage spécifique (différents protocoles 1h30)",
+                            price: "79€"
+                        },
+                        {
+                            text: "Soin du visage (différents protocoles 1h)",
+                            price: "72€"
+                        },
+                        {
+                            text: "Soin Evasion sensorielle aux pinceaux",
+                            price: "89€"
+                        },
+                        {
+                            text: "Soin visage Eclat - Anti-taches 1h30 + 3 soins de 45mn",
+                            price: "69€"
+                        },
                     ]
                 }
             ]
@@ -77,27 +77,23 @@ const prestationsData = [
         image: presationImage6,
         content: [
             {
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "Soin perfection regard et lèvres aux quartzs",
-                                price: "69€"
-                            },
-                            {
-                                text: "Teinture des cils",
-                                price: "25€"
-                            },
-                            {
-                                text: "Teinture des sourcils",
-                                price: "9,50€"
-                            },
-                            {
-                                text: "Teinture cils + sourcils",
-                                price: "29€"
-                            },
-                        ]
-                    }
+                        text: "Soin perfection regard et lèvres aux quartzs",
+                        price: "69€"
+                    },
+                    {
+                        text: "Teinture des cils",
+                        price: "25€"
+                    },
+                    {
+                        text: "Teinture des sourcils",
+                        price: "9,50€"
+                    },
+                    {
+                        text: "Teinture cils + sourcils",
+                        price: "29€"
+                    },
                 ]
             }
         ]
@@ -109,63 +105,59 @@ const prestationsData = [
         image: presationImage2,
         content: [
             {
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "1/2 jambes",
-                                price: "24€"
-                            },
-                            {
-                                text: "Maillot ou aisselles",
-                                price: "14€"
-                            },
-                            {
-                                text: "Maillot intégral",
-                                price: "31€"
-                            },
-                            {
-                                text: "Maillot 1/2 intégral",
-                                price: "25€"
-                            },
-                            {
-                                text: "1/2 jambes + maillot + aisselles",
-                                price: "41€"
-                            },
-                            {
-                                text: "Jambes",
-                                price: "35€"
-                            },
-                            {
-                                text: "Jambes + maillot ou aisselles",
-                                price: "39€"
-                            },
-                            {
-                                text: "Jambes + maillot + aisselles",
-                                price: "43€"
-                            },
-                            {
-                                text: "Bras",
-                                price: "20€"
-                            },
-                            {
-                                text: "Torse ou dos",
-                                price: "25€"
-                            },
-                            {
-                                text: "Torse et dos",
-                                price: "45€"
-                            },
-                            {
-                                text: "Sourcils ou lèvres ou menton",
-                                price: "8,50€"
-                            },
-                            {
-                                text: "Sourcils + lèvres",
-                                price: "14,50€"
-                            },
-                        ]
-                    }
+                        text: "1/2 jambes",
+                        price: "24€"
+                    },
+                    {
+                        text: "Maillot ou aisselles",
+                        price: "14€"
+                    },
+                    {
+                        text: "Maillot intégral",
+                        price: "31€"
+                    },
+                    {
+                        text: "Maillot 1/2 intégral",
+                        price: "25€"
+                    },
+                    {
+                        text: "1/2 jambes + maillot + aisselles",
+                        price: "41€"
+                    },
+                    {
+                        text: "Jambes",
+                        price: "35€"
+                    },
+                    {
+                        text: "Jambes + maillot ou aisselles",
+                        price: "39€"
+                    },
+                    {
+                        text: "Jambes + maillot + aisselles",
+                        price: "43€"
+                    },
+                    {
+                        text: "Bras",
+                        price: "20€"
+                    },
+                    {
+                        text: "Torse ou dos",
+                        price: "25€"
+                    },
+                    {
+                        text: "Torse et dos",
+                        price: "45€"
+                    },
+                    {
+                        text: "Sourcils ou lèvres ou menton",
+                        price: "8,50€"
+                    },
+                    {
+                        text: "Sourcils + lèvres",
+                        price: "14,50€"
+                    },
                 ]
             }
         ]
@@ -179,116 +171,112 @@ const prestationsData = [
         image: presationImage7,
         content: [
             {
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "Modelage Suédois",
-                                price: "1h10 89€"
-                            },
-                            {
-                                text: "Modelage destiné à éliminer les tensions musculaires et à favoriser une bonne récupération physique. Son travail important sur le dos apporte une détente profonde.",
-                                price: "45mn 69€ <br /> 30mn 59€"
-                            },
-                        ]
+                        text: "Modelage Suédois",
+                        price: "1h10 89€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Modelage à Bali",
-                                price: "1h10 89€"
-                            },
-                            {
-                                text: "Modelage à la fois relaxant et énergisant qui marie les différentes techniques américaine, asiatique et indienne.",
-                                price: "45mn 69€"
-                            },
-                            {
-                                text: "Son parcours tout autour du corps en fait un modelage ludique et original.",
-                                price: "30mn 59€"
-                            }
-                        ]
+                        text: "Modelage destiné à éliminer les tensions musculaires et à favoriser une bonne récupération physique. Son travail important sur le dos apporte une détente profonde.",
+                        price: "45mn 69€ <br /> 30mn 59€"
+                    },
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Modelage à Bali",
+                        price: "1h10 89€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Modelage Californien",
-                                price: "1h10 89€"
-                            },
-                            {
-                                text: "Modelage relaxant utilisant des manoeuvres enveloppantes et glissées sur l'ensemble du corps. Il permet d'apporter harmonie entre le corps et l'esprit.",
-                                price: "45mn 69€ <br /> 30mn 59€"
-                            }
-                        ]
+                        text: "Modelage à la fois relaxant et énergisant qui marie les différentes techniques américaine, asiatique et indienne.",
+                        price: "45mn 69€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Modelage Hawaien",
-                                price: "1h10 89€"
-                            },
-                            {
-                                text: "Modelage relaxant utilisant le travail des vagues, effectué par les avant-bras sur l'ensemble du corps. Ces manoeuvres enveloppantes apportent un bercement et favorisent la circulation de retour.",
-                                price: "45mn 69€ <br /> 30mn 59€"
-                            }
-                        ]
+                        text: "Son parcours tout autour du corps en fait un modelage ludique et original.",
+                        price: "30mn 59€"
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Modelage Californien",
+                        price: "1h10 89€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Modelage Polynésien Mahanna",
-                                price: "79€"
-                            },
-                            {
-                                text: "Modelage en étoile crâne, visage, mains et pieds.",
-                            }
-                        ]
+                        text: "Modelage relaxant utilisant des manoeuvres enveloppantes et glissées sur l'ensemble du corps. Il permet d'apporter harmonie entre le corps et l'esprit.",
+                        price: "45mn 69€ <br /> 30mn 59€"
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Modelage Hawaien",
+                        price: "1h10 89€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Voyage sur la route de Malaisie - 1h30",
-                                price: "109€"
-                            },
-                            {
-                                text: "Gommage ou Enveloppement au beurre de karité.",
-                            },
-                            {
-                                text: "Onction huile chaude sur le corps et modelage (45mn).",
-                            }
-                        ]
+                        text: "Modelage relaxant utilisant le travail des vagues, effectué par les avant-bras sur l'ensemble du corps. Ces manoeuvres enveloppantes apportent un bercement et favorisent la circulation de retour.",
+                        price: "45mn 69€ <br /> 30mn 59€"
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Modelage Polynésien Mahanna",
+                        price: "79€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Voyage Polynésien aux coquillages chauffants - 1h45",
-                                price: "145€"
-                            },
-                            {
-                                text: "Gommage modelage aux coquillages chauds (1h10).",
-                            }
-                        ]
+                        text: "Modelage en étoile crâne, visage, mains et pieds.",
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Voyage sur la route de Malaisie - 1h30",
+                        price: "109€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Voyage sur la route des délices - 1h15",
-                                price: "89€"
-                            },
-                            {
-                                text: "Gommage fleur d'oranger + modelage 30mn.",
-                            }
-                        ]
+                        text: "Gommage ou Enveloppement au beurre de karité.",
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Voyage aromatique - 1h",
-                                price: "79€"
-                            },
-                            {
-                                text: "Modelage à la bougie à la senteur aromatique de rose.",
-                            }
-                        ]
+                        text: "Onction huile chaude sur le corps et modelage (45mn).",
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Voyage Polynésien aux coquillages chauffants - 1h45",
+                        price: "145€"
+                    },
+                    {
+                        text: "Gommage modelage aux coquillages chauds (1h10).",
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Voyage sur la route des délices - 1h15",
+                        price: "89€"
+                    },
+                    {
+                        text: "Gommage fleur d'oranger + modelage 30mn.",
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Voyage aromatique - 1h",
+                        price: "79€"
+                    },
+                    {
+                        text: "Modelage à la bougie à la senteur aromatique de rose.",
                     }
                 ]
             }
@@ -301,34 +289,30 @@ const prestationsData = [
         image: presationImage5,
         content: [
             {
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "La Sultane de Saba",
-                                price: "130€"
-                            },
-                            {
-                                text: "Sur la route de darjeeling 2h."
-                            },
-                            {
-                                text: "Soin du visage (1h), modelage du corps (45mn)."
-                            }
-                        ]
+                        text: "La Sultane de Saba",
+                        price: "130€"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "Yon-Ka",
-                                price: "169€"
-                            },
-                            {
-                                text: "Secret de beauté, soin d'absolu bien être 2h30."
-                            },
-                            {
-                                text: "Gommage, modelage du corps (30mn), soin du visage (1h)"
-                            }
-                        ]
+                        text: "Sur la route de darjeeling 2h."
+                    },
+                    {
+                        text: "Soin du visage (1h), modelage du corps (45mn)."
+                    }
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "Yon-Ka",
+                        price: "169€"
+                    },
+                    {
+                        text: "Secret de beauté, soin d'absolu bien être 2h30."
+                    },
+                    {
+                        text: "Gommage, modelage du corps (30mn), soin du visage (1h)"
                     }
                 ]
             }
@@ -343,20 +327,16 @@ const prestationsData = [
         image: presationImage3,
         content: [
             {
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "- Au sucre de gommage"
-                            },
-                            {
-                                text: "- Au sel de gommage",
-                                price: "49€"
-                            },
-                            {
-                                text: "- A la cire de gommage"
-                            }
-                        ]
+                        text: "- Au sucre de gommage"
+                    },
+                    {
+                        text: "- Au sel de gommage",
+                        price: "49€"
+                    },
+                    {
+                        text: "- A la cire de gommage"
                     }
                 ]
             }
@@ -371,26 +351,20 @@ const prestationsData = [
         image: presationImage4,
         content: [
             {
-                paragraph: [
+                description: "C'est une méthode indolore générant un rayonnement infrarouges afin de rétablir l'équilibre d'une ou plusieurs fonctions.",
+                prestations: [
                     {
-                        title: "C'est une méthode indolore générant un rayonnement infrarouges afin de rétablir l'équilibre d'une ou plusieurs fonctions.",
-                        prestations: [
-                            {
-                                price: "62€ la séance"
-                            },
-                            {
-                                text: "- Troubles du comportement alimentaire."
-                            },
-                            {
-                                text: "- Troubles liés à la ménopause"
-                            },
-                            {
-                                text: "- Troubles du sommeil et du stress"
-                            },
-                            {
-                                text: "- Arrêt du tabac"
-                            }
-                        ]
+                        price: "62€ la séance",
+                        text: "- Troubles du comportement alimentaire."
+                    },
+                    {
+                        text: "- Troubles liés à la ménopause"
+                    },
+                    {
+                        text: "- Troubles du sommeil et du stress"
+                    },
+                    {
+                        text: "- Arrêt du tabac"
                     }
                 ]
             }
@@ -402,96 +376,86 @@ const prestationsData = [
         id: "cellu-m6",
         image: presationImage1,
         content: [
+
             {
                 title: "LE CORPS",
-
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "CELLU M6 35mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "54€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "540€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "810€"
-                            },
-                        ]
-
+                        text: "CELLU M6 35mn"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "CELLU M6 15mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "27€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "270€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "405€"
-                            },
-                        ]
-                    }
+                        text: "Cellu M6 - à la séance",
+                        price: "54€"
+                    },
+                    {
+                        text: "Cellu M6 10 séances + 1 offerte",
+                        price: "540€"
+                    },
+                    {
+                        text: "Cellu M6 15 séances + 2 offertes",
+                        price: "810€"
+                    },
+                ]
+            },
+            {
+                prestations: [
+                    {
+                        text: "CELLU M6 15mn"
+                    },
+                    {
+                        text: "Cellu M6 - à la séance",
+                        price: "27€"
+                    },
+                    {
+                        text: "Cellu M6 10 séances + 1 offerte",
+                        price: "270€"
+                    },
+                    {
+                        text: "Cellu M6 15 séances + 2 offertes",
+                        price: "405€"
+                    },
                 ]
             },
             {
                 title: "LE VISAGE",
-
-                paragraph: [
+                prestations: [
                     {
-                        prestations: [
-                            {
-                                text: "CELLU M6 35mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "54€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "540€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "810€"
-                            },
-                        ]
-
+                        text: "CELLU M6 35mn"
                     },
                     {
-                        prestations: [
-                            {
-                                text: "CELLU M6 15mn"
-                            },
-                            {
-                                text: "Cellu M6 - à la séance",
-                                price: "27€"
-                            },
-                            {
-                                text: "Cellu M6 10 séances + 1 offerte",
-                                price: "270€"
-                            },
-                            {
-                                text: "Cellu M6 15 séances + 2 offertes",
-                                price: "405€"
-                            },
-                        ]
-                    }
+                        text: "Cellu M6 - à la séance",
+                        price: "54€"
+                    },
+                    {
+                        text: "Cellu M6 10 séances + 1 offerte",
+                        price: "540€"
+                    },
+                    {
+                        text: "Cellu M6 15 séances + 2 offertes",
+                        price: "810€"
+                    },
                 ]
+
             },
+            {
+                prestations: [
+                    {
+                        text: "CELLU M6 15mn"
+                    },
+                    {
+                        text: "Cellu M6 - à la séance",
+                        price: "27€"
+                    },
+                    {
+                        text: "Cellu M6 10 séances + 1 offerte",
+                        price: "270€"
+                    },
+                    {
+                        text: "Cellu M6 15 séances + 2 offertes",
+                        price: "405€"
+                    },
+                ]
+            }
         ]
 
     },
@@ -502,7 +466,7 @@ const prestationsData = [
         image: presationImage9,
         content: [
             {
-                paragraph: []
+                paragraph: {}
             }
         ]
 
@@ -527,5 +491,6 @@ export {
     scrollDown,
     institutPage1,
     institutPage2,
-    logo
+    logo,
+    imgIcon
 }

@@ -18,6 +18,12 @@ const Navbar = () => {
           <Link onClick={() => setIsOpen(!isOpen)} to="/produits">Produits</Link>
         </li>
         <li>
+          <Link onClick={() => setIsOpen(!isOpen)} to="/produits">Réservation</Link>
+        </li>
+        <li>
+          <Link onClick={() => setIsOpen(!isOpen)} to="/produits">Cadeaux</Link>
+        </li>
+        <li>
           <Link onClick={() => setIsOpen(!isOpen)} to="/contact">Contact</Link>
         </li>
       </ul>

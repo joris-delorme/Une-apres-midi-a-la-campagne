@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 150px 30px;
+    background-color: #ffe5ff;
 
     h1 {
         font-size: 30px;
@@ -30,6 +31,12 @@
         flex-direction: column;
         row-gap: 10px;
         margin-bottom: 40px;
+    }
+
+    .presta-description {
+        margin-bottom: 50px;
+        max-width: 600px;
+        font-size: 20px;
     }
 
     .prices {

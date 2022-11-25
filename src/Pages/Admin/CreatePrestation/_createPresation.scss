@@ -1,0 +1,146 @@
+#createPrestation {
+    padding: 150px 10vw;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .back {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .createPrestation__container {
+        display: flex;
+        column-gap: 50px;
+        row-gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    input,textarea {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .imageBox {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        position: relative;
+
+        .img-container {
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+
+            .image {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        button {
+            position: absolute;
+            border-radius: 20px;
+            width: 300px;
+            height: 300px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            &.border {
+                border: solid 7px #000;
+
+                img {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            img {
+                margin: auto;
+                transition: all 0.3s;
+                width: 50px;
+                opacity: 0;
+            } 
+        }
+    }
+
+    .delete {
+        background-color: red;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .add {
+        background-color: rgb(117, 218, 117);
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    .paragraph {
+        padding: 10px;
+        margin: 100px 0;
+        position: relative;
+
+        textarea {
+            min-width: 400px;
+            max-width: 400px;
+            min-height: 30px;
+        }
+
+        .info {
+            display: flex;
+            margin: 50px 0;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        .new-presations {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        .new-prestation {
+            display: flex;
+            column-gap: 30px;
+            font-size: 20px;
+            position: relative;
+
+            input {
+                max-height: 30px;
+            }
+
+            textarea, input {
+                font-size: 17px;
+            }
+
+
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap");
 .hero {
   height: 100vh;
   width: 100%;
@@ -262,13 +262,14 @@ footer p {
   }
 }
 .home {
+  background-color: #ffe5ff;
   padding-bottom: 100px;
 }
 .home h2 {
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 40px;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.25;
 }
 .home .hero h1 {
   max-width: 1020px !important;
@@ -625,6 +626,7 @@ footer p {
   justify-content: center;
   align-items: center;
   padding: 150px 30px;
+  background-color: #ffe5ff;
 }
 .prestation h1 {
   font-size: 30px;
@@ -649,6 +651,11 @@ footer p {
   flex-direction: column;
   row-gap: 10px;
   margin-bottom: 40px;
+}
+.prestation .presta-description {
+  margin-bottom: 50px;
+  max-width: 600px;
+  font-size: 20px;
 }
 .prestation .prices {
   display: flex;
@@ -679,6 +686,307 @@ footer p {
   max-width: 446px;
 }
 
+#authentification {
+  height: 100vh;
+  display: flex;
+}
+#authentification .left-container, #authentification .image {
+  height: 100%;
+}
+#authentification .left-container {
+  width: 50%;
+}
+#authentification h1 {
+  margin-right: auto;
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 50px;
+}
+#authentification .right-container {
+  display: flex;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+#authentification input {
+  padding: 20px 50px;
+  border: none;
+  background-color: transparent;
+  border: solid 3px #000;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#authentification button {
+  padding: 20px 100px;
+  border: none;
+  border-radius: 30px;
+  background-color: #4c6766;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#createPrestation {
+  padding: 150px 10vw;
+}
+#createPrestation header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#createPrestation .back {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#createPrestation .createPrestation__container {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+#createPrestation input, #createPrestation textarea {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
+}
+#createPrestation .imageBox {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+#createPrestation .imageBox .img-container {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+#createPrestation .imageBox .img-container .image {
+  height: 100%;
+  width: 100%;
+}
+#createPrestation .imageBox button {
+  position: absolute;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#createPrestation .imageBox button.border {
+  border: solid 7px #000;
+}
+#createPrestation .imageBox button.border img {
+  opacity: 1;
+}
+#createPrestation .imageBox button:hover img {
+  transform: scale(1.1);
+}
+#createPrestation .imageBox button img {
+  margin: auto;
+  transition: all 0.3s;
+  width: 50px;
+  opacity: 0;
+}
+#createPrestation .delete {
+  background-color: red;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#createPrestation .add {
+  background-color: rgb(117, 218, 117);
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#createPrestation .paragraph {
+  padding: 10px;
+  margin: 100px 0;
+  position: relative;
+}
+#createPrestation .paragraph textarea {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 30px;
+}
+#createPrestation .paragraph .info {
+  display: flex;
+  margin: 50px 0;
+  flex-direction: column;
+  row-gap: 30px;
+}
+#createPrestation .paragraph .new-presations {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+#createPrestation .paragraph .new-prestation {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  font-size: 20px;
+  position: relative;
+}
+#createPrestation .paragraph .new-prestation input {
+  max-height: 30px;
+}
+#createPrestation .paragraph .new-prestation textarea, #createPrestation .paragraph .new-prestation input {
+  font-size: 17px;
+}
+
+#admin-presations {
+  padding: 150px 10vw;
+}
+#admin-presations .admin-presations__container {
+  height: 100%;
+  width: 100%;
+}
+#admin-presations .admin-presations__container .more {
+  height: 250px;
+  width: 250px;
+  background-color: transparent;
+  border: solid 7px;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+#admin-presations .admin-presations__container .more:hover {
+  transform: scale(0.9);
+}
+#admin-presations .admin-presations__container .more::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5px;
+  width: 50px;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+}
+#admin-presations .admin-presations__container .more::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5px;
+  width: 50px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(90deg);
+  border-radius: 100px;
+}
+#admin-presations .prestation-card-container {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#admin-presations .prestation-card-container .button-container {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  z-index: 99;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#admin-presations .prestation-card-container .button-container button {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#admin-presations .prestation-card-container .button-container button.edit {
+  background-color: rgb(52, 52, 255);
+}
+#admin-presations .prestation-card-container .button-container button.delete {
+  background-color: rgb(255, 52, 52);
+}
+#admin-presations .presations-all {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+#admin-presations .prestation-card {
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+#admin-presations .prestation-card img {
+  transition: all 0.3s ease-in-out;
+  max-height: 300px;
+}
+#admin-presations .prestation-card:hover .img-container img {
+  transform: scale(1.1);
+}
+#admin-presations .prestation-card:hover .prestation-card-bottom img {
+  transform: translateX(10px);
+}
+#admin-presations .prestation-card .img-container {
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#admin-presations .prestation-card .img-container img {
+  display: block;
+}
+#admin-presations .prestation-card .prestation-card-bottom {
+  background-color: #53716F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#admin-presations .prestation-card .prestation-card-bottom p {
+  color: #fff;
+}
+#admin-presations .prestation-card .prestation-card-bottom img {
+  transform: rotate(-90deg);
+  height: 15px;
+  display: block;
+}
+
+#admin {
+  min-height: 100vh;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -695,4 +1003,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.pasifico {
+  font-family: "Pacifico", cursive;
 }/*# sourceMappingURL=styles.css.map */
